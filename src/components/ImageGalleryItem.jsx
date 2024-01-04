@@ -12,8 +12,13 @@ const ImageGalleryItem = ({ smallImageUrl, largeImageUrl }) => {
   };
 
   return (
-    <li>
-      <img onClick={showImageModal} src={smallImageUrl} alt="Preview" />
+    <li className="imageGalleryItem">
+      <img
+        onClick={showImageModal}
+        src={smallImageUrl}
+        alt="Preview"
+        className="imageGalleryItem-image"
+      />
     </li>
   );
 };
